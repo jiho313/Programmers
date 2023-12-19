@@ -1,4 +1,4 @@
-package level1.음양더하기;
+package level0.세균증식;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,24 +8,21 @@ class SolutionTest {
 
     @Test
     void solution1() {
-        int[] absolutes = {4, 7, 12};
-        boolean[] signs = {true, false, true};
+        int n = 2;
+        int t = 10;
         Solution solution = new Solution();
-        int answer = solution.solution(absolutes, signs);
-        int expected = 9;
+        int answer = solution.solution(n, t);
+        int expected = 2048;
         assertThat(answer).isEqualTo(expected);
     }
-
     @Test
     void solution2() {
-        int[] absolutes = {1, 2, 3};
-        boolean[] signs = {false, false, true};
+        int n = 7;
+        int t = 15;
         Solution solution = new Solution();
-        int answer = solution.solution(absolutes, signs);
-        int expected = 0;
+        int answer = solution.solution(n, t);
+        int expected = 229376;
         assertThat(answer).isEqualTo(expected);
     }
-
-
 
 }

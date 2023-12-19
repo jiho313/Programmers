@@ -1,7 +1,8 @@
 package level1.문자열내p와y의개수;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SolutionTest {
 
@@ -10,7 +11,7 @@ class SolutionTest {
         Solution solution = new Solution();
         String s = "pPoooyY";
         boolean answer = solution.solution(s);
-        Assertions.assertThat(answer).isTrue();
+        assertThat(answer).isTrue();
     }
 
     @Test
@@ -18,7 +19,7 @@ class SolutionTest {
         Solution solution = new Solution();
         String s = "Pyy";
         boolean answer = solution.solution(s);
-        Assertions.assertThat(answer).isFalse();
+        assertThat(answer).isFalse();
     }
 
 }

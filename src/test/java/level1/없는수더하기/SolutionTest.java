@@ -1,12 +1,8 @@
 package level1.없는수더하기;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SolutionTest {
 
@@ -17,8 +13,8 @@ class SolutionTest {
         int expected = 14;
         int answer1 = solution.solution1(numbers);
         int answer2 = solution.solution2(numbers);
-        Assertions.assertThat(answer1).isEqualTo(expected);
-        Assertions.assertThat(answer2).isEqualTo(expected);
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
     }
     @Test
     void solution2() {
@@ -27,8 +23,8 @@ class SolutionTest {
         int expected = 6;
         int answer1 = solution.solution1(numbers);
         int answer2 = solution.solution2(numbers);
-        Assertions.assertThat(answer1).isEqualTo(expected);
-        Assertions.assertThat(answer2).isEqualTo(expected);
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
     }
 
 }

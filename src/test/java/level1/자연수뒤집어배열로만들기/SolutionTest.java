@@ -2,9 +2,7 @@ package level1.자연수뒤집어배열로만들기;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SolutionTest {
 

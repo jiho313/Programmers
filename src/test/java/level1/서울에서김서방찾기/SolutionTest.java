@@ -1,7 +1,8 @@
 package level1.서울에서김서방찾기;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SolutionTest {
 
@@ -11,7 +12,7 @@ class SolutionTest {
         Solution solution = new Solution();
         String answer = solution.solution(seoul);
         String expected = "김서방은 1에 있다";
-        Assertions.assertThat(answer).isEqualTo(expected);
+        assertThat(answer).isEqualTo(expected);
     }
 
 }
