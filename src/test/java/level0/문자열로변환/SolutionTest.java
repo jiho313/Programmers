@@ -1,4 +1,4 @@
-package level0.약수구하기;
+package level0.문자열로변환;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,23 +8,23 @@ class SolutionTest {
 
     @Test
     void solution1() {
-        int n = 24;
+        int n = 123;
         Solution solution = new Solution();
-        int[] answer1 = solution.solution1(n);
-        int[] answer2 = solution.solution2(n);
-        int[] expected = {1, 2, 3, 4, 6, 8, 12, 24};
+        String expected = "123";
+        String answer1 = solution.solution1(n);
+        String answer2 = solution.solution2(n);
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
+    }
+    @Test
+    void solution2() {
+        int n = 2573;
+        Solution solution = new Solution();
+        String expected = "2573";
+        String answer1 = solution.solution1(n);
+        String answer2 = solution.solution2(n);
         assertThat(answer1).isEqualTo(expected);
         assertThat(answer2).isEqualTo(expected);
     }
 
-    @Test
-    void solution2() {
-        int n = 29;
-        Solution solution = new Solution();
-        int[] answer1 = solution.solution1(n);
-        int[] answer2 = solution.solution2(n);
-        int[] expected = {1, 29};
-        assertThat(answer1).isEqualTo(expected);
-        assertThat(answer2).isEqualTo(expected);
-    }
 }
