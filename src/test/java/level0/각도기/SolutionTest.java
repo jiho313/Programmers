@@ -12,8 +12,9 @@ class SolutionTest {
         Solution solution = new Solution();
         int answer1 = solution.solution1(angle);
         int answer2 = solution.solution2(angle);
-        assertThat(answer1).isEqualTo(1);
-        assertThat(answer2).isEqualTo(1);
+        int expected = 1;
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
     }
     @Test
     void solution2() {
@@ -21,8 +22,9 @@ class SolutionTest {
         Solution solution = new Solution();
         int answer1 = solution.solution1(angle);
         int answer2 = solution.solution2(angle);
-        assertThat(answer1).isEqualTo(3);
-        assertThat(answer2).isEqualTo(3);
+        int expected = 3;
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
     }
     @Test
     void solution3() {
@@ -30,8 +32,9 @@ class SolutionTest {
         Solution solution = new Solution();
         int answer1 = solution.solution1(angle);
         int answer2 = solution.solution2(angle);
-        assertThat(answer1).isEqualTo(4);
-        assertThat(answer2).isEqualTo(4);
+        int expected = 4;
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(expected);
     }
 
 }
