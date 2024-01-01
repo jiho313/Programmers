@@ -21,7 +21,7 @@ class SolutionTest {
         String target = "wxyz";
         Solution solution = new Solution();
         int answer = solution.solution(myString, target);
-        assertThat(answer).isEqualTo(0);
+        assertThat(answer).isZero();
     }
 
 }

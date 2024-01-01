@@ -13,6 +13,6 @@ public class Solution {
                 yCount ++;
             }
         }
-        return pCount == yCount ? true : false;
+        return pCount == yCount;
     }
 }

@@ -20,7 +20,7 @@ class SolutionTest {
         String[] s2 = {"m", "dot"};
         Solution solution = new Solution();
         int answer = solution.solution(s1, s2);
-        assertThat(answer).isEqualTo(0);
+        assertThat(answer).isZero();
     }
 
 }
