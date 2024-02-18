@@ -2,7 +2,11 @@ package level0.n의배수고르기;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.*;
+import java.util.stream.IntStream;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.in;
 
 class SolutionTest {
 
@@ -41,4 +45,5 @@ class SolutionTest {
         assertThat(answer1).isEqualTo(expected);
         assertThat(answer2).isEqualTo(expected);
     }
+
 }
